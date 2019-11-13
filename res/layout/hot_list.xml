@@ -1,0 +1,1083 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="3" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/pink"
+                android:orientation="vertical"
+                android:paddingBottom="10dp" >
+
+                <!-- 最热推荐开始 -->
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/white_c" >
+
+                    <TextView
+                        android:id="@+id/tv_car_accname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        android:text="最热推荐"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/tv_more"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/tv_car_accname"
+                        android:layout_alignBottom="@+id/tv_car_accname"
+                        android:layout_alignParentRight="true"
+                        android:paddingRight="10dp"
+                        android:text="更多    >>"
+                        android:textColor="#ff0000"
+                        android:textSize="10sp" />
+                </RelativeLayout>
+                <!-- 第一行开始 -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:weightSum="3" >
+
+                    <!-- 请你晚点再爱我开始 -->
+
+                    <LinearLayout
+                        android:id="@+id/hot_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:id="@+id/hot_image1"
+                            android:layout_width="75dp"
+                            android:layout_height="90dp"
+                            android:src="@drawable/wandian" />
+
+                        <TextView
+                            android:id="@+id/hot_1_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="请你晚点再爱我"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:id="@+id/hot_1_tv2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="￥23"
+                            android:textColor="#FF0000"
+                            android:textSize="10sp" />
+                    </LinearLayout>
+                    <!-- 请你晚点再爱我结束 -->
+
+
+                    <!-- 第二本开始 -->
+
+                    <LinearLayout
+                        android:id="@+id/hot_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:id="@+id/hot_image2"
+                            android:layout_width="75dp"
+                            android:layout_height="90dp"
+                            android:src="@drawable/baobao" />
+
+                        <TextView
+                            android:id="@+id/hot_2_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="我想抱抱你"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:id="@+id/hot_2_tv2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="￥30"
+                            android:textColor="#FF0000"
+                            android:textSize="10sp" />
+                    </LinearLayout>
+                    <!-- 第二本结束 -->
+
+
+                    <!-- 第三本开始 -->
+
+                    <LinearLayout
+                        android:id="@+id/hot_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:id="@+id/hot_image3"
+                            android:layout_width="75dp"
+                            android:layout_height="90dp"
+                            android:src="@drawable/yujian" />
+
+                        <TextView
+                            android:id="@+id/hot_3_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="遇见未知的自己"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:id="@+id/hot_3_tv2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="￥23"
+                            android:textColor="#FF0000"
+                            android:textSize="10sp" />
+                    </LinearLayout>
+                    <!-- 第三本结束 -->
+
+                </LinearLayout>
+                <!-- 第一行 结束 -->
+
+
+                <!-- 第二行开始 -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:weightSum="3" >
+
+                    <!-- 第一本开始 -->
+
+                    <LinearLayout
+                        android:id="@+id/hot_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:id="@+id/hot_image4"
+                            android:layout_width="75dp"
+                            android:layout_height="90dp"
+                            android:src="@drawable/like" />
+
+                        <TextView
+                            android:id="@+id/hot_4_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="你会不会喜欢我"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:id="@+id/hot_4_tv2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="￥23"
+                            android:textColor="#FF0000"
+                            android:textSize="10sp" />
+                    </LinearLayout>
+                    <!-- 第一本结束 -->
+
+
+                    <!-- 第二本开始 -->
+
+                    <LinearLayout
+                        android:id="@+id/hot_5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:id="@+id/hot_5image2"
+                            android:layout_width="75dp"
+                            android:layout_height="90dp"
+                            android:src="@drawable/sanmao" />
+
+                        <TextView
+                            android:id="@+id/hot_5_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="三毛的小说"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:id="@+id/hot_5_tv2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="￥23"
+                            android:textColor="#FF0000"
+                            android:textSize="10sp" />
+                    </LinearLayout>
+                    <!-- 第二本结束 -->
+
+
+                    <!-- 第三本开始 -->
+
+                    <LinearLayout
+                        android:id="@+id/hot_6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:id="@+id/hot_6image3"
+                            android:layout_width="75dp"
+                            android:layout_height="90dp"
+                            android:src="@drawable/yujian" />
+
+                        <TextView
+                            android:id="@+id/hot_6_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="遇见未知的自己"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:id="@+id/hot_6_tv2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="￥23"
+                            android:textColor="#FF0000"
+                            android:textSize="10sp" />
+                    </LinearLayout>
+                    <!-- 第一本结束 -->
+
+                </LinearLayout>
+                <!-- 第二行 结束 -->
+
+
+                <!-- 最热推荐结束 -->
+
+
+                <!-- 校园爱情开始 -->
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/white_c" >
+
+                    <TextView
+                        android:id="@+id/tv_love_accname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        android:text="都市言情"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/tv2_more"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/tv_love_accname"
+                        android:layout_alignBottom="@+id/tv_love_accname"
+                        android:layout_alignParentRight="true"
+                        android:paddingRight="10dp"
+                        android:text="更多    >>"
+                        android:textColor="#ff0000"
+                        android:textSize="10sp" />
+                </RelativeLayout>
+                <!-- 第一行开始 -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:weightSum="3" >
+
+                    <!-- 第一本开始 -->
+
+                    <LinearLayout
+                        android:id="@+id/love_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:id="@+id/love_image1"
+                            android:layout_width="75dp"
+                            android:layout_height="90dp"
+                            android:src="@drawable/hun" />
+
+                        <TextView
+                            android:id="@+id/love_1_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="5dp"
+                            android:text="婚不释苒"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:id="@+id/love_1_tv2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="￥43"
+                            android:textColor="#FF0000"
+                            android:textSize="10sp" />
+                    </LinearLayout>
+                    <!-- 第一本结束 -->
+
+
+                    <!-- 第二本开始 -->
+
+                    <LinearLayout
+                        android:id="@+id/love_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:id="@+id/love_image2"
+                            android:layout_width="75dp"
+                            android:layout_height="90dp"
+                            android:src="@drawable/fuhei" />
+
+                        <TextView
+                            android:id="@+id/love_2_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="5dp"
+                            android:text="腹黑老婆不准躲"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:id="@+id/love_2_tv2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="￥22"
+                            android:textColor="#FF0000"
+                            android:textSize="10sp" />
+                    </LinearLayout>
+                    <!-- 第二本结束 -->
+
+
+                    <!-- 第三本开始 -->
+
+                    <LinearLayout
+                        android:id="@+id/love_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:id="@+id/love_image3"
+                            android:layout_width="75dp"
+                            android:layout_height="90dp"
+                            android:src="@drawable/aojiao" />
+
+                        <TextView
+                            android:id="@+id/love_3_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="5dp"
+                            android:text="傲娇首席偏执爱"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:id="@+id/love_3_tv2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="￥33"
+                            android:textColor="#FF0000"
+                            android:textSize="10sp" />
+                    </LinearLayout>
+                    <!-- 第一本结束 -->
+
+                </LinearLayout>
+                <!-- 第一行 结束 -->
+
+
+                <!-- 第二行开始 -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:weightSum="3" >
+
+                    <!-- 第一本开始 -->
+
+                    <LinearLayout
+                        android:id="@+id/love_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:id="@+id/love_image4"
+                            android:layout_width="75dp"
+                            android:layout_height="90dp"
+                            android:src="@drawable/sanhun" />
+
+                        <TextView
+                            android:id="@+id/love_4_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="5dp"
+                            android:text="闪婚晚爱"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:id="@+id/love_4_tv2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="￥33"
+                            android:textColor="#FF0000"
+                            android:textSize="10sp" />
+                    </LinearLayout>
+                    <!-- 第一本结束 -->
+
+
+                    <!-- 第二本开始 -->
+
+                    <LinearLayout
+                        android:id="@+id/love_5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:id="@+id/love_5image2"
+                            android:layout_width="75dp"
+                            android:layout_height="90dp"
+                            android:src="@drawable/emo" />
+
+                        <TextView
+                            android:id="@+id/love_5_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="5dp"
+                            android:text="恶魔千金归来"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:id="@+id/love_5_tv2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="￥29"
+                            android:textColor="#FF0000"
+                            android:textSize="10sp" />
+                    </LinearLayout>
+                    <!-- 第二本结束 -->
+
+
+                    <!-- 第三本开始 -->
+
+                    <LinearLayout
+                        android:id="@+id/love_6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:id="@+id/love_6image3"
+                            android:layout_width="75dp"
+                            android:layout_height="90dp"
+                            android:src="@drawable/disan" />
+
+                        <TextView
+                            android:id="@+id/love_6_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="5dp"
+                            android:text="第三种爱情"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:id="@+id/love_6_tv2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="￥30"
+                            android:textColor="#FF0000"
+                            android:textSize="10sp" />
+                    </LinearLayout>
+                    <!-- 第三本结束 -->
+
+                </LinearLayout>
+                <!-- 第二行 结束 -->
+                <!-- 校园爱情结束 -->
+
+
+                <!-- 最热推荐开始 -->
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/white_c" >
+
+                    <TextView
+                        android:id="@+id/tv_wang_accname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        android:text="网络文学"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/wang_more"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/tv_wang_accname"
+                        android:layout_alignBottom="@+id/tv_wang_accname"
+                        android:layout_alignParentRight="true"
+                        android:paddingRight="10dp"
+                        android:text="更多    >>"
+                        android:textColor="#ff0000"
+                        android:textSize="10sp" />
+                </RelativeLayout>
+                <!-- 第一行开始 -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:weightSum="3" >
+
+                    <!-- 第一本开始 -->
+
+                    <LinearLayout
+                        android:id="@+id/wang_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:id="@+id/wang_image1"
+                            android:layout_width="75dp"
+                            android:layout_height="90dp"
+                            android:src="@drawable/wandian" />
+
+                        <TextView
+                            android:id="@+id/wang_1_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="请你晚点再爱我"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:id="@+id/wang_1_tv2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="￥25"
+                            android:textColor="#FF0000"
+                            android:textSize="10sp" />
+                    </LinearLayout>
+                    <!-- 第一本结束 -->
+
+
+                    <!-- 第二本开始 -->
+
+                    <LinearLayout
+                        android:id="@+id/wang_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:id="@+id/wang_image2"
+                            android:layout_width="75dp"
+                            android:layout_height="90dp"
+                            android:src="@drawable/baobao" />
+
+                        <TextView
+                            android:id="@+id/wang_2_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="我想抱抱你"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:id="@+id/wang_2_tv2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="￥26"
+                            android:textColor="#FF0000"
+                            android:textSize="10sp" />
+                    </LinearLayout>
+                    <!-- 第二本结束 -->
+
+
+                    <!-- 第三本开始 -->
+
+                    <LinearLayout
+                        android:id="@+id/wang_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:id="@+id/wang_image3"
+                            android:layout_width="75dp"
+                            android:layout_height="90dp"
+                            android:src="@drawable/yujian" />
+
+                        <TextView
+                            android:id="@+id/wang_3_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="遇见未知的自己"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:id="@+id/wang_3_tv2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="￥31"
+                            android:textColor="#FF0000"
+                            android:textSize="10sp" />
+                    </LinearLayout>
+                    <!-- 第三本结束 -->
+
+                </LinearLayout>
+                <!-- 第一行 结束 -->
+
+
+                <!-- 第二行开始 -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:weightSum="3" >
+
+                    <!-- 第一本开始 -->
+
+                    <LinearLayout
+                        android:id="@+id/wang_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:id="@+id/wang_image4"
+                            android:layout_width="75dp"
+                            android:layout_height="90dp"
+                            android:src="@drawable/like" />
+
+                        <TextView
+                            android:id="@+id/wang_4_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="你会不会喜欢我"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:id="@+id/wang_4_tv2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="￥33"
+                            android:textColor="#FF0000"
+                            android:textSize="10sp" />
+                    </LinearLayout>
+                    <!-- 第一本结束 -->
+
+
+                    <!-- 第二本开始 -->
+
+                    <LinearLayout
+                        android:id="@+id/wang_5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:id="@+id/wang_5image2"
+                            android:layout_width="75dp"
+                            android:layout_height="90dp"
+                            android:src="@drawable/sanmao" />
+
+                        <TextView
+                            android:id="@+id/wang_5_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="三毛的小说"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:id="@+id/wang_5_tv2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="￥43"
+                            android:textColor="#FF0000"
+                            android:textSize="10sp" />
+                    </LinearLayout>
+                    <!-- 第二本结束 -->
+
+
+                    <!-- 第三本开始 -->
+
+                    <LinearLayout
+                        android:id="@+id/wang_6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:id="@+id/wang_6image3"
+                            android:layout_width="75dp"
+                            android:layout_height="90dp"
+                            android:src="@drawable/yujian" />
+
+                        <TextView
+                            android:id="@+id/wang_6_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="遇见未知的自己"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:id="@+id/wang_6_tv2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="￥37"
+                            android:textColor="#FF0000"
+                            android:textSize="10sp" />
+                    </LinearLayout>
+                    <!-- 第一本结束 -->
+
+                </LinearLayout>
+                <!-- 第二行 结束 -->
+                <!-- 网络文学结束 -->
+
+
+                <!-- 青春文艺开始 -->
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/white_c" >
+
+                    <TextView
+                        android:id="@+id/tv_wen_accname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        android:text="青春文艺"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/wen_more"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/tv_wen_accname"
+                        android:layout_alignBottom="@+id/tv_wen_accname"
+                        android:layout_alignParentRight="true"
+                        android:paddingRight="10dp"
+                        android:text="更多    >>"
+                        android:textColor="#ff0000"
+                        android:textSize="10sp" />
+                </RelativeLayout>
+                <!-- 第一行开始 -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:weightSum="3" >
+
+                    <!-- 第一本开始 -->
+
+                    <LinearLayout
+                        android:id="@+id/wenyi_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:id="@+id/wenyi_image1"
+                            android:layout_width="75dp"
+                            android:layout_height="90dp"
+                            android:src="@drawable/linghun" />
+
+                        <TextView
+                            android:id="@+id/wenyi_1_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="5dp"
+                            android:text="灵魂有香气的女子"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:id="@+id/wenyi_1_tv2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="￥21"
+                            android:textColor="#FF0000"
+                            android:textSize="10sp" />
+                    </LinearLayout>
+                    <!-- 第一本结束 -->
+
+
+                    <!-- 第二本开始 -->
+
+                    <LinearLayout
+                        android:id="@+id/wenyi_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:id="@+id/qingchun_image2"
+                            android:layout_width="75dp"
+                            android:layout_height="90dp"
+                            android:src="@drawable/shiguang" />
+
+                        <TextView
+                            android:id="@+id/wang__2_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="5dp"
+                            android:text="拾光里的我们"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:id="@+id/wenyi_2_tv2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="￥21.3"
+                            android:textColor="#FF0000"
+                            android:textSize="10sp" />
+                    </LinearLayout>
+                    <!-- 第二本结束 -->
+
+
+                    <!-- 第三本开始 -->
+
+                    <LinearLayout
+                        android:id="@+id/wenyi_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:id="@+id/wenyi_image3"
+                            android:layout_width="75dp"
+                            android:layout_height="90dp"
+                            android:src="@drawable/myname" />
+
+                        <TextView
+                            android:id="@+id/wenyi_3_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="5dp"
+                            android:text="我的名字，你的姓氏"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:id="@+id/wenyi_3_tv2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="￥20"
+                            android:textColor="#FF0000"
+                            android:textSize="10sp" />
+                    </LinearLayout>
+                    <!-- 第三本结束 -->
+
+                </LinearLayout>
+                <!-- 第一行 结束 -->
+
+
+                <!-- 第二行开始 -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:weightSum="3" >
+
+                    <!-- 第一本开始 -->
+
+                    <LinearLayout
+                        android:id="@+id/wenyi_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:id="@+id/wenyi_image4"
+                            android:layout_width="75dp"
+                            android:layout_height="90dp"
+                            android:src="@drawable/hua" />
+
+                        <TextView
+                            android:id="@+id/wenyi_4_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="5dp"
+                            android:text="时光有你，记忆成花"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:id="@+id/wenyi_4_tv2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="￥23"
+                            android:textColor="#FF0000"
+                            android:textSize="10sp" />
+                    </LinearLayout>
+                    <!-- 第一本结束 -->
+
+
+                    <!-- 第二本开始 -->
+
+                    <LinearLayout
+                        android:id="@+id/wenyi_5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:id="@+id/wenyi_5image2"
+                            android:layout_width="75dp"
+                            android:layout_height="90dp"
+                            android:src="@drawable/jiyi" />
+
+                        <TextView
+                            android:id="@+id/wenyi_5_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="5dp"
+                            android:text="散落星河的记忆"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:id="@+id/wenyi_5_tv2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="￥33"
+                            android:textColor="#FF0000"
+                            android:textSize="10sp" />
+                    </LinearLayout>
+                    <!-- 第二本结束 -->
+
+
+                    <!-- 第三本开始 -->
+
+                    <LinearLayout
+                        android:id="@+id/wenyi_6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:id="@+id/wenyi_6image3"
+                            android:layout_width="75dp"
+                            android:layout_height="90dp"
+                            android:src="@drawable/wohenir" />
+
+                        <TextView
+                            android:id="@+id/wenyi_6_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="5dp"
+                            android:text="我和你差之微毫的世界"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:id="@+id/wenyi_6_tv2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="￥24"
+                            android:textColor="#FF0000"
+                            android:textSize="10sp" />
+                    </LinearLayout>
+                    <!-- 第一本结束 -->
+
+                </LinearLayout>
+                <!-- 第二行 结束 -->
+
+
+                <!-- 青春文艺结束 -->
+
+                <TextView
+                    android:id="@+id/book_bottom"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingTop="15dp"
+                    android:text="-------------------我是有底线的--------------------"
+                    android:textColor="#FFF5EE"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

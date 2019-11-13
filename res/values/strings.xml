@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Star书屋</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_news_frag">HomeFrag</string>
+    <string name="title_activity_book_detail">Star书屋</string>
+    <string name="title_activity_book_detil">Star书屋</string>
+    <string name="detil_text">动态网页与静态网页相比，下列描述不恰当的是
+     A.动态 网页更具交互性B.动态网页内容更及时性C.动态网页要取缔静态网页   D.动态网页与静态网页能很好地共存动态网页与静态网页相比，下列描述不恰当的是
+     A.动态 网页更具交互性B.动态网页内容更及时性C.动态网页要取缔静态网页   D.动态网页与静态网页能很好地共存
+     动态网页与静态网页相比，下列描述不恰当的是
+     A.动态 网页更具交互性B.动态网页内容更及时性C.动态网页要取缔静态网页   D.动态网页与静态网页能很好地共存动态网页与静态网页相比，下列描述不恰当的是
+     A.动态 网页更具交互性B.动态网页内容更及时性C.动态网页要取缔静态网页   D.动态网页与静态网页能很好地共存</string>
+    <string name="title_activity_arrage_list">Star书屋</string>
+    <string name="title_activity_arage_list_detail">Star书屋</string>
+    <string name="title_activity_login">Star书屋</string>
+    <string name="title_activity_register">Star书屋</string>
+
+</resources>
